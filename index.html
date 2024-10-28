@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Img/logo.png">
+    <title>To Do List</title>
+    <!-- Include Tailwind CSS -->
+    <link rel="stylesheet" href="./dist/style.css">
+    
+</head>
+
+<body>
+
+    <div
+        class="container flex flex-col justify-center items-center border border-slate-600 w-fit p-2 rounded-3xl mx-auto my-[250px]">
+        <h2 class="text-slate-900 font-semibold text-[20px]">Today's Plan Insha'Allah</h2>
+        <div class="div flex my-3 gap-2">
+            <input  id="inputBox" type="text" class=" border border-slate-600 rounded-full w-[250px] pt-2 px-4 ">
+            <button id="addBtn" class="text-white bg-orange-600 px-4 rounded-full hover:bg-orange-700" onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="listContainer" class="flex flex-col justify-around mx-auto gap-2">
+
+        </ul>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
